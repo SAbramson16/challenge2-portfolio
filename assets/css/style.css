@@ -1,3 +1,11 @@
+:root {
+  --blue: #587B7F;
+  --olive: #394032;
+  --sage: #8DAB7F;
+  --light: #CFEE9E;
+  --dark: #1E2019;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,16 +13,16 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-
   body{
-    background-color: cornflowerblue;
+    background-color: var(--blue);
     font-size: 24px;
   }
 
   .header{
-    background-color: purple;
-    color:beige;
+    background-color: var(--olive);
+    color: var(--sage);
   }
+
   .header h1{
     display: inline-block;
     font-size: 48px;
@@ -29,24 +37,59 @@
 
   .header nav ul{
     list-style-type: none;
-
   }
 
   .header nav li{
     display: inline-block;
     padding: 0 0 30px 30px;
   }
-  
+
+  nav a:hover{
+    color: var(--light);
+  }
+
   a{
     text-decoration: none;
-    color: beige;
+    color: var(--sage);
+  }
+
+  #about-me{
+    background-color: var(--dark);
+    margin: 2%;
+    position: relative;
+    border-radius: 50px;
+    color:var(--sage);
+    font-size: 80%;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    left: 33%;
+  }
+
+  #about-me h1{
+    text-align: center;
+    color:var(--sage);
+    font-size: 30px;
+  }
+
+  #about-me img{
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+
+  #about-me p{
+    margin: 15px;
+    padding: 15px;
   }
 
   #works {
-    background-color: purple;
-    color:beige;
+    background-color: var(--dark);
+    color:var(--sage);
     text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 2%;
     width: 80%;
     left: 10%;
@@ -57,17 +100,17 @@
 
   .works-project-info{
     font-size: 85%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     left: 35%;
-    padding-top: 4%;
+    padding-top: 2%;
   }
 
   .works-section{
     display: block;
     padding-top: 1%;
     padding-bottom: 1%;
-
   }
 
   .works-section h4{
@@ -77,64 +120,35 @@
   }
 
   .works-project{
-    display: inline-block;
+    display: flex;
     padding-left: 4%;
     text-align: left;
     position: relative;
-    
-  }
-
-  .works-project img{
-    width: 30%;
   }
 
   #horiseon{
     width: 33%;
-    margin-left: -1.5%;
-  }
-  
-
-  
-
-  #about-me{
-    color:beige;
-    font-size: 80%;
-    height: 100%;
-    width: 30%;
-    text-align: center;
-    left: 35%;
-    position: relative;
-  }
-  
-  #about-me p{
-    margin: 15px;
-    padding: 15px;
+    margin-left: -2.5%;
   }
 
-  #about-me h1{
-    text-align: center;
-    color:azure;
-    font-size: 30px;
+  .works-project img{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
   }
-
-  #about-me img{
-    display: block;
-    width: 50%;
-    margin: auto;
-  }
-
 
   footer{
-    background-color: purple;
-    color: beige;
+    background-color: var(--olive);
+    color: var(--sage);
     height: 50px;
   }
 
   footer h2{
     display: inline-block;
-    font-size: 16px;
+    font-size: 80%;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 20px;
+    margin-left: 20px;
   }
 
   footer nav{
@@ -142,7 +156,7 @@
     margin-right: 20px;
     float: right;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 85%;
   }
 
   footer nav ul{
@@ -152,14 +166,12 @@
   footer nav li{
     display: inline-block;
     padding-right: 20px;
-    
   }
 
-/*  */
-
   @media screen and (max-width: 768px) {
-    main,
-    nav {
+    #works,
+    .works-section {
       flex-direction: column;
     }
   }
+  
