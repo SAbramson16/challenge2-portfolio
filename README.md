@@ -10,7 +10,7 @@ This project is a portfolio page showcasing web applications that I, the develop
 
 ## Usage
 
-There are several uses on this pade. When the user clicks on the navigtion items, the UI will scroll to the corresponding section. When the user hovers over the navigation items, the item will turn a different colour. When the user clicks on "LinkedIn" and "Github" they will be sent to the developers respective pages. When the user clicks on the images in the "My Work" section, the user is taken to that deployed application. The developer is using placeholders for the second, and third application, so the user will be taken to www.google.com when clicking on those images. 
+There are several uses on this page. When the user clicks on the navigtion items, the UI will scroll to the corresponding section. When the user hovers over the navigation items, the item will turn a different colour. When the user clicks on "LinkedIn" and "Github" they will be sent to the developers respective pages. When the user clicks on the images in the "My Work" section, the user is taken to that deployed application. The developer is using placeholders for the second, and third application, so the user will be taken to www.google.com when clicking on those images. 
 
 The website can be launched by using GitHub pages, and follwing this URL: https://sabramson16.github.io/challenge2-portfolio/
 
