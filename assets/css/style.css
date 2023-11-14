@@ -6,6 +6,7 @@
   --dark: #1E2019;
 }
 
+/*Using the same font-family throughout the entire page, so it's included in the body*/
 *{
     margin: 0;
     padding: 0;
@@ -82,6 +83,7 @@
     margin: 15px;
     padding: 15px;
   }
+/* I've placed all 3 sections of my work into one section. It has an ID selector because that section only appears once */
 
   #works {
     background-color: var(--dark);
@@ -98,13 +100,9 @@
     margin-bottom: 5%;
   }
 
-  .works-project-info{
-    font-size: 85%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 35%;
-    padding-top: 2%;
+  #horiseon{
+    width: 33%;
+    margin-left: -2.5%;
   }
 
   .works-section{
@@ -126,9 +124,13 @@
     position: relative;
   }
 
-  #horiseon{
-    width: 33%;
-    margin-left: -2.5%;
+  .works-project-info{
+    font-size: 85%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 35%;
+    padding-top: 2%;
   }
 
   .works-project img{
@@ -146,7 +148,6 @@
   footer h2{
     display: inline-block;
     font-size: 80%;
-    font-family: Arial, Helvetica, sans-serif;
     padding-top: 20px;
     margin-left: 20px;
   }
@@ -155,7 +156,6 @@
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 85%;
   }
 
@@ -168,10 +168,12 @@
     padding-right: 20px;
   }
 
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 960px) {
     #works,
     .works-section {
       flex-direction: column;
     }
   }
+  
   
