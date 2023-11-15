@@ -1,9 +1,9 @@
 :root {
-  --blue: #587B7F;
-  --olive: #394032;
-  --sage: #8DAB7F;
-  --light: #CFEE9E;
-  --dark: #1E2019;
+  --green: #214E34;
+  --sage: #5C7457;
+  --grey: #979B8D;
+  --light: #C1BCAC;
+  --pink: #EFD0CA;
 }
 
 /*Using the same font-family throughout the entire page, so it's included in the body*/
@@ -15,15 +15,16 @@
   }
 
   body{
-    background-color: var(--light);
+    background-color: var(--grey);
     font-size: 24px;
   }
 
   header{
-    background-color: var(--blue);
-    color: var(--dark);
+    background-color: var(--green);
+    color: var(--pink);
     display: flex;
     justify-content: space-between;
+    padding: 10px;
   }
 
   header h1{
@@ -43,21 +44,21 @@
 
   header nav li{
     display: inline-block;
-    padding: 0 0 30px 30px;
+    padding: 0 0 0 30px;
   }
 
   nav a:hover{
-    color: var(--light);
+    color: var(--pink);
   }
 
   a{
     text-decoration: none;
-    color: var(--dark);
+    color: var(--light);
   }
 
   #about-me{
     background-color: var(--sage);
-    color:var(--dark);
+    color:var(--light);
     margin-top: 2%;
     position: relative;
     border-radius: 50px;
@@ -69,8 +70,8 @@
 
   #about-me h1{
     text-align: center;
-    color:var(--dark);
-    font-size: 30px;
+    color:var(--pink);
+    font-size: 200%;
   }
 
   #about-me img{
@@ -87,7 +88,7 @@
 
   #works {
     background-color: var(--sage);
-    color:var(--dark);
+    color:var(--light);
     text-align: center;
     padding: 2%;
     width: 80%;
@@ -95,6 +96,10 @@
     position: relative;
     border-radius: 50px;
     margin-bottom: 5%;
+  }
+
+  #works h1{
+    color: var(--pink);
   }
 
   .works-section{
@@ -107,6 +112,7 @@
     display: block;
     margin: 1%;
     text-decoration: underline;
+    color: var(--pink)
   }
 
   .works-project{
@@ -121,6 +127,7 @@
     position: absolute;
     left: 35%;
     padding-top: 2%;
+    color: var(--light)
   }
 
   .works-project-img{
@@ -135,10 +142,10 @@
   }
 
   footer{
-    background-color: var(--blue);
+    background-color: var(--green);
     display: flex;
     justify-content: space-between;
-    color: var(--dark);
+    color: var(--light);
     height: 100%;
   }
 
@@ -155,6 +162,10 @@
     font-size: 85%;
   }
 
+  footer nav a {
+    color: var(--light);
+  }
+
   footer nav ul{
     list-style-type: none;
   }
@@ -163,7 +174,6 @@
     display: inline-block;
     padding-right: 20px;
   }
-
 
   @media screen and (max-width: 960px) {
     #works,
@@ -184,7 +194,8 @@
 
     header nav li{
       display: block;
-      font-size: 80%;
+      font-size: 90%;
+      padding: 0 0 10px 0;
     }
 
     .works-project{
